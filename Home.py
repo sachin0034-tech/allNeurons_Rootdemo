@@ -322,11 +322,6 @@ with st.sidebar:
     w1, w2 = st.slider("Week range", 1, 22, (1, 22), format="W%02d")
     sel    = st.multiselect("Source systems", list(DATA.keys()), default=list(DATA.keys()))
     st.markdown("---")
-    st.caption(
-        f"Database: RETAIL_ANALYTICS\n"
-        f"Period: W01–W22 2026 (Jan–May)\n"
-        f"Total records: {TOTAL_ROWS:,}"
-    )
 
 
 # ─────────────────────────────────────────────────────────────
